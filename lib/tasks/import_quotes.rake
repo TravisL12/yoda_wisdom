@@ -1,4 +1,6 @@
-desc "Import quotes from Scraped Sites"
+desc "Import quotes from using Mechanize"
+# scraped from http://www.yodaquotes.net/
+
 task :import_quotes => :environment do |variable|
 
   10.times do |num|
