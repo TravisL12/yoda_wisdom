@@ -1,16 +1,19 @@
 source 'https://rubygems.org'
+ruby '2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc2'
 
 gem 'mechanize'
-gem 'thin'
+
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 
 # Use postgresql as the database for Active Record
+gem 'thin'
 gem 'pg'
+gem 'haml-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc2'
@@ -39,7 +42,6 @@ group :development, :test do
   gem 'better_errors'
   gem 'pry-rails'
   gem 'quiet_assets'
-  gem 'haml-rails'
   gem 'binding_of_caller'
   gem 'database_cleaner'
   gem 'debugger'
