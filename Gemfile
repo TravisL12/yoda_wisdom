@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+
+group :production do
+  ruby '2.0.0'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc2'
@@ -37,6 +40,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 group :development, :test do
+  ruby '1.9.3'
   gem 'sextant'
   gem 'meta_request'
   gem 'better_errors'
